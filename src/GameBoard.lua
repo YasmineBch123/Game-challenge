@@ -94,7 +94,9 @@ function GameBoard:renderTableaus()
 end
 
 function GameBoard:drawBackground()
-    love.graphics.clear(0, 0.3, 0, 1)
+    love.graphics.clear()
+    love.graphics.setBackgroundColor(1, 1, 1)
+
 
     -- main stack placeholders
     love.graphics.rectangle('line', 10, 50, CARD_WIDTH, CARD_HEIGHT, 3)
